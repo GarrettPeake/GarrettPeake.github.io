@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: indianred;
+    --main-bg-color: white;
 }
 
 #cardintro{
@@ -12,7 +12,7 @@
     top: 0px;
     left: 0px;
     bottom: 0px;
-    z-index: -1;
+    z-index: 1;
 }
 
 body{
@@ -29,7 +29,28 @@ body{
     top: 0px;
     left: 0px;
     bottom: 0px;
-    background-color: red;
-    z-index: 1;
-    opacity: 1;
+    background-color: var(--main-bg-color);
+    z-index: 2;
+    opacity: 1.0;
+}
+
+.infoimg{
+    width: 90%;
+    padding: 5%;
+}
+
+.infotext{
+
+}
+
+.infodiv{
+    text-align:center;
+    width: 33.33%;
+    height: 75%;
+    float:left;
+}
+
+#scroll{
+    width: 25%;
+    padding: 5%;
 }

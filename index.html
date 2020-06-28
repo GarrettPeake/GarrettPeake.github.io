@@ -1,23 +1,49 @@
-<!DOCTYPE html>         
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Garrett Peake</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-    </head>
-    <body scroll="no" style="overflow: hidden">
-        <div id="blanker" onload="fade()"></div>
-        <video id="cardintro" autoplay>
-            <source src="assets/test.mp4" type="video/mp4">
-          Sadly your browser doesn't support HTML5 video :(
-        </video>
-    </body>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Garrett Peake</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body scroll="no" style="overflow: hidden" onload="fade(10);trackIntro()">
+    <div id="blanker"></div>
+    <video id="cardintro" muted autoplay>
+        <source src="assets/test.mp4" type="video/mp4">
+        Sadly your browser doesn't support HTML5 video meaning this portfolio will look pretty lame
+    </video>
+    <div class="infodiv">
+        <a href="https://github.com/GarrettPeake">
+            <img class="infoimg" id="github" src="assets/github.png" alt="My Github"></img>
+            <p class="infotext"> Github Profile</p>
+        </a>
+    </div>
+    <div class="infodiv">
+        <a href="https://www.linkedin.com/in/gepeake/">
+            <img class="infoimg" id="linkedin" src="assets/linkedin.webp" alt="My LinkedIn"></img>
+            <p class="infotext"> LinkedIn Profile</p>
+        </a>
+    </div>
+    <div class="infodiv">
+        <a href="/resume">
+            <img class="infoimg" id="resume" src="assets/resume.png" alt="My Resume"></img>
+            <p class="infotext"> Resume</p>
+        </a>
+    </div>
+    <div style="height:25%;">
+        <img id="scroll" src="assets/scroll.gif" alt="Scroll For Projects"></img>
+        <p class="infotext"> Scroll to see my projects</p>
+    </div>
+</body>
+
 </html>
