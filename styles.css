@@ -31,4 +31,5 @@ body{
     bottom: 0px;
     background-color: red;
     z-index: 1;
+    opacity: 1;
 }
