@@ -14,9 +14,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <link rel="icon" href="assets/icon.png">
 </head>
 
-<body scroll="no" style="overflow: hidden" onload="fade(10);trackIntro()">
+<body scroll="no" style="overflow: hidden" onload="fadeBlanker();trackIntro()">
     <div id="blanker"></div>
     <video id="cardintro" muted autoplay>
         <source src="assets/test.mp4" type="video/mp4">
@@ -35,8 +36,8 @@
         </a>
     </div>
     <div class="infodiv">
-        <a href="/resume">
-            <img class="infoimg" id="resume" src="assets/resume.png" alt="My Resume"></img>
+        <a href="resume.html">
+            <img class="infoimg" id="resumebutton" src="assets/resume.png" alt="My Resume"></img>
             <p class="infotext"> Resume</p>
         </a>
     </div>
