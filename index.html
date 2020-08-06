@@ -17,34 +17,35 @@
     <link rel="icon" href="assets/icon.png">
 </head>
 
-<body scroll="no" style="overflow: hidden" onload="fadeBlanker();trackIntro()">
-    <div id="blanker"></div>
+<body scroll="no" style="overflow: hidden" onload="fadeBlanker();trackIntro();">
+    <div id="blanker" class="blanker"></div>
     <video id="cardintro" muted autoplay>
         <source src="assets/test.mp4" type="video/mp4">
         Sadly your browser doesn't support HTML5 video meaning this portfolio will look pretty lame
     </video>
+    <div id="blanker2" class="blanker"></div>
     <div class="infodiv">
         <a href="https://github.com/GarrettPeake">
-            <img class="infoimg" id="github" src="assets/github.png" alt="My Github"></img>
-            <p class="infotext"> Github Profile</p>
+            <ion-icon class="ionicon" name="logo-github" alt="My Github Profile"></ion-icon>
+            <p class="infotext">Github Profile</p>
         </a>
     </div>
     <div class="infodiv">
         <a href="https://www.linkedin.com/in/gepeake/">
-            <img class="infoimg" id="linkedin" src="assets/linkedin.webp" alt="My LinkedIn"></img>
-            <p class="infotext"> LinkedIn Profile</p>
+            <ion-icon class="ionicon" name="logo-linkedin" alt="My LinkedIn Profile"></ion-icon>
+            <p class="infotext">LinkedIn Profile</p>
         </a>
     </div>
     <div class="infodiv">
         <a href="resume.html">
-            <img class="infoimg" id="resumebutton" src="assets/resume.png" alt="My Resume"></img>
-            <p class="infotext"> Resume</p>
+            <ion-icon class="ionicon" name="newspaper" alt="My Resume"></ion-icon>
+            <p class="infotext">Resume</p>
         </a>
     </div>
     <div style="height:25%;">
-        <img id="scroll" src="assets/scroll.gif" alt="Scroll For Projects"></img>
-        <p class="infotext"> Scroll to see my projects</p>
+        <ion-icon id="scroll" name="arrow-down-circle-outline"></ion-icon>
     </div>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
 </html>
