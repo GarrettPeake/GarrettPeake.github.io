@@ -1,6 +1,4 @@
 function fade(elem, t) {
-  // Fades in or out an element in time t, to fade out make t negative
-  // Decides whether to fade in or out
   let resolution = 100.0;
   setTimeout(() => {
     let curr = window.getComputedStyle(elem).getPropertyValue("opacity");
