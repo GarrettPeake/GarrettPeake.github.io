@@ -1,8 +1,10 @@
 :root {
-    --main-bg-color: #fdcb9e;
-    --color-blue: #0f4c75;
-    --color-light-blue: #00b7c2;
-    --color-dark-blue: #1b262c;
+    --color-1: #720D5D;
+    --color-2: #5D1049;
+    --color-3: #4E0D3A;
+    --color-4: #E30425;
+    --text-color: white;
+    --card-height: 98vh;
 }
 
 a, a:hover, a:focus, a:active {
@@ -10,111 +12,72 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
-#cardintro {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    z-index: 98;
-}
-
-#resume {
-    border-radius: 10px;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    height: 100%;
-    width: 70vh;
-    overflow: hidden;
-}
-
-#resumecontainer {
-    height: 97vh;
-    width: auto;
-    float: left;
-    border-radius: 10px;
-    margin-left: -50%;
-    margin-top: -48.5vh;
-    box-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white;
-}
-
-#wrapper{
-    position: absolute;
-    height: 100%;
-    left: 50vw;
-    top: 50vh;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
-
 body {
-    background-color: var(--main-bg-color);
-    opacity: 1;
-    transition: 1s opacity;
-}
-body.fade-out {
-    opacity: 0;
-    transition: none;
+    background-color: var(--color-1);
+    perspective: 100vmax, 50;
 }
 
-.blanker {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+#blanker {
+    width: 1000%;
+    height: 1000%;
+    padding: 0%;
+    margin: -20% -20% 0% 0%;
+    border: 0%;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    background-color: var(--main-bg-color);
+    background-color: var(--color-1);
     z-index: 99;
 }
 
-.infoimg {
-    width: 90%;
-    padding: 5%;
+#card{
+    width: calc(var(--card-height)/2*3.5);
+    height: var(--card-height);
+    padding: 0%;
+    margin: auto;
+    margin-top: calc(50vh - var(--card-height)/2);
+    background-image: url("assets/card_front.png");
+    background-repeat: repeat;
+    border-radius: .3%;
 }
 
-.infotext {
-    color: var(--color-blue);
-    font-size: 200%;
-    padding: 0px;
-    border: 0px;
-    margin: 4%;
-}
-
-.infodiv {
-    background-color: var(--color-light-blue);
+.infocard {
+    background-color: white;
+    display: grid;
     text-align: center;
-    width: 31%;
-    margin: 1.165%;
+    width: calc(var(--card-height)/2*3.5/3.1);
+    font-size: calc(var(--card-height)/2*3.5/3.1/100);
+    margin: 0.53762%;
+    border: 0%;
+    padding: 0%;
     float: left;
     border-radius: 10%;
-    box-shadow: 10 5 5px var(--color-dark-blue);
+    box-shadow: calc(var(--card-height)*.01) calc(var(--card-height)*.005) calc(var(--card-height)*.005) var(--color-2);
+    display: block
 }
 
 .infobutton {
-    border: 4px solid var(--color-blue);
-    border-radius: 9px;
-    padding: 0px;
-    border: 0px;
-    margin: 4%;
+    display: inline-block;
+    color: var(--color-3);
+    font-size: 500%;
+    border: 2px solid var(--color-3);
+    border-radius: 9999px;
+    padding: 1.5% 3%;
+    margin: 0% 0% 3% 0%;
 }
 
 .ionicon{
-    font-size: 31vw;
-    padding: 0px;
-    color: var(--color-blue);
+    display: inline;
+    font-size: 98%;
+    fill: var(--color-2);
+    margin: 0%;
+    padding: 0%;
+    color: var(--color-2);
+}
+
+.ionicon:hover{
+    fill: var(--color-4)
 }
 
 #scroll {
     font-size: 12vh;
-    color: var(--color-blue);
+    color: var(--color-2);
 }

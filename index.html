@@ -6,48 +6,41 @@
 <html class="no-js">
 <!--<![endif]-->
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Garrett Peake</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <link rel="icon" href="assets/icon.png">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Garrett Peake</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <link rel="icon" href="assets/icon.png">
+    </head>
 
-<body scroll="no" style="overflow: hidden" onload="fadeBlanker();trackIntro();">
-    <div id="blanker" class="blanker"></div>
-    <video id="cardintro" muted autoplay>
-        <source src="assets/test.mp4" type="video/mp4">
-        Sadly your browser doesn't support HTML5 video meaning this portfolio will look pretty lame
-    </video>
-    <div id="blanker2" class="blanker"></div>
-    <div class="infodiv">
-        <a href="https://github.com/GarrettPeake">
-            <ion-icon class="ionicon" name="logo-github" alt="My Github Profile"></ion-icon>
-            <div class="infobutton">
-                <p class="infotext">Github</p>
-            </div>
-        </a>
-    </div>
-    <div class="infodiv">
-        <a href="https://www.linkedin.com/in/gepeake/">
-            <ion-icon class="ionicon" name="logo-linkedin" alt="My LinkedIn Profile"></ion-icon>
-            <p class="infotext">LinkedIn</p>
-        </a>
-    </div>
-    <div class="infodiv">
-        <a href="resume.html">
-            <ion-icon class="ionicon" name="newspaper" alt="My Resume"></ion-icon>
-            <p class="infotext">Resume</p>
-        </a>
-    </div>
-    <div style="height:25%;">
-        <ion-icon id="scroll" name="arrow-down-circle-outline"></ion-icon>
-    </div>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-</body>
+    <body scroll="no" style="overflow: hidden" onload="fadeBlanker();animateIntro();">
+        <div id="blanker"></div>
+        <div id="card">
+            <a href="https://github.com/GarrettPeake" class="infocard">
+                <ion-icon class="ionicon" name="logo-github" alt="My Github Profile"></ion-icon>
+                <p class="infobutton">Github</p>
+            </a>
+            <a href="https://www.linkedin.com/in/gepeake/" class="infocard">
+                <svg class="ionicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.2 27.2" alt="My LinkedIn Profile">
+                    <path d="M13.6 1.6c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+                </svg>
+                <p class="infobutton">LinkedIn</p>
+            </a>
+            <a href="resume.html" class="infocard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" class="ionicon" alt="My Resume">
+                    <path d="M150,0.001C67.156,0.001,0,67.16,0,149.999s67.156,149.997,149.995,149.997s150.003-67.161,150.003-149.997C299.997,67.157,232.834,0.001,149.995,0.001z M217.205,217.204c0,10.066-8.159,18.225-18.223,18.225h-97.967c-10.068,0-18.225-8.159-18.225-18.225V82.79c0-10.066,8.159-18.225,18.225-18.225h76.892v36.45h39.298V217.204z M185.688,93.232V64.563l31.517,28.669H185.688z"/>
+                </svg>
+                <p class="infobutton">Resume</p>
+            </a>
+        </div>
+        <div style="height:25%;">
+            <ion-icon id="scroll" name="arrow-down-circle-outline"></ion-icon>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    </body>
 
 </html>
